@@ -14,7 +14,7 @@ function formatMessage(text: string) {
   text = cleanAsterisks(text);
   return text
     .split('\n')
-    .map((line, i) => {
+    .map((line) => {
       // Format bold text
       let formattedLine = line.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
       // Format italic text
